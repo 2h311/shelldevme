@@ -1,2 +1,2 @@
 #!/bin/bash
-flask --app ../api/index run --debug
+flask --app ./api/index run --debug
