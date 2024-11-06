@@ -610,6 +610,58 @@ html{
   width: 100%;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[100rem\] {
+  width: 100rem;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
+}
+
+.w-\[32rem\] {
+  width: 32rem;
+}
+
+.w-\[38rem\] {
+  width: 38rem;
+}
+
+.w-\[36rem\] {
+  width: 36rem;
+}
+
+.w-\[39rem\] {
+  width: 39rem;
+}
+
+.w-\[37rem\] {
+  width: 37rem;
+}
+
+.w-\[37\.5rem\] {
+  width: 37.5rem;
+}
+
+.w-\[37\.65rem\] {
+  width: 37.65rem;
+}
+
 .basis-\[49\%\] {
   flex-basis: 49%;
 }
