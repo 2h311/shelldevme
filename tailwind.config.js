@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./api/templates/*.html"],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+          "litera": ["Literata", "serif"],
+        }
+      },
     },
   plugins: [],
 };

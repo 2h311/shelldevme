@@ -2,12 +2,45 @@
 
 {% block pagecontent %}
 
-<section class="">
-<div></div>
+<section class="flex flex-col space-y-16">
+  <div class="flex justify-between items-center">
+    <a href="{{ url_for('home') }}" class="text-5xl font-extrabold italic font-litera">shelldev</a>
+    <div class="flex space-x-5 border-0">
+      <a href="https://www.linkedin.com/in/adebio-me" target="_blank" class="">
+        <i data-lucide="linkedin"></i>
+      </a>
+
+      <a href="https://github.com/2h311" target="_blank" class="">
+        <i data-lucide="github"></i>
+      </a>
+      
+      <a href="mailto:abeebbade@gmail.co" target="_blank" class="">
+        <i data-lucide="mail"></i>
+      </a>
+
+      <a href="" target="_blank" class="">
+        <i data-lucide="download"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="text-xl font-light flex flex-col space-y-3.5">
+    <p><strong>Bòóni!</strong> I'm Adebayo -– a software developer who loves building bridges between ideas and technology. I specialize in turning complex problems into streamlined, user-friendly solutions, crafting code that’s both efficient and adaptable.</p>
+    <p><a href="" class="underline font-normal">My resume</a> offers a deeper look into my skills, experience, and the value I can add to your team.</p>
+    <p>Check out some of my work below – each project is a step in my journey toward mastering the art of software development. Let’s build something amazing together! 🚀</p>
+  </div>
+
+  <section class="flex flex-wrap justify-between gap-y-4">
+    <div class="border border-2 rounded h-32 basis-[49%]"></div>
+    <div class="border border-2 rounded h-32 basis-[49%]"></div>
+    <div class="border border-2 rounded h-32 basis-[49%]"></div>
+    <div class="border border-2 rounded h-32 basis-[49%]"></div>
+  </section>
+
+  <div class="text-xl font-light flex flex-col space-y-3.5">
+    <p>I build with JavaScript/Typescript, Python, Rust, Django, Flask, FastAPI, CSS/SASS/LESS, TailwindCSS, Redux, Zustand, MongoDB, Postgresql, Git, Github, Gitlab, Linux.</p>
+    <p>I believe in continuous learning and a clean, intuitive approach to development. When I'm not coding, you might find me exploring the latest tech trends, contributing to open-source projects, or experimenting with new frameworks.</p>
+  </div>
 </section>
 
-
-<h1 class="text-xl">
-
-</h1>
 {% endblock pagecontent %}
