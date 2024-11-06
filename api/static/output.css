@@ -554,23 +554,47 @@ video {
   display: none;
 }
 
-.border {
-  border-width: 1px;
+html{
+  font-family: "Inter", sans-serif;
 }
 
-.border-2 {
-  border-width: 2px;
+.block {
+  display: block;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.h-2\.5 {
+  height: 0.625rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.w-full {
+  width: 100%;
 }
 
-.underline {
-  text-decoration-line: underline;
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-\[\#F98AFF\] {
+  --tw-gradient-from: #F98AFF var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(249 138 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-\[\#1CCB1C\] {
+  --tw-gradient-to: #1CCB1C var(--tw-gradient-to-position);
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
