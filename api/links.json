@@ -1,6 +1,14 @@
 {
+  "external_links": {
     "github": "https://github.com/2h311",
     "linkedin": "https://www.linkedin.com/in/shelldevme/",
     "resume": "https://www.dropbox.com/scl/fi/vmy50ee5natztxvgjvqww/Adebayo_Olasunkanmi_Resume.pdf?rlkey=sm16nhy5d40aro1jkzipx8w6n&st=91df9vbk&dl=0",
     "email": "abeebbade@gmail.com"
+  }, 
+  "projects": [
+    {"name": "search-ojcc", "href": "https://search-ojcc.vercel.app/", "description": "🤖 Streamlines finding florida case-related information"},
+    {"name": "unhashables", "href": "https://unhashables.vercel.app/", "description": "🧩 Makes data handling both secure and user-friendly"},
+    {"name": "eathealthy", "href": "https://eathealthy-lovat.vercel.app/", "description": "🥗 Promotes healthy eating, provides information on nutrition"},
+    {"name": "word-frequency", "href": "https://word-frequency-phi.vercel.app/", "description": "📊 Analyzes word frequency within a given text"}
+  ]  
 }

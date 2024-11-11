@@ -5,19 +5,19 @@
   <div class="flex justify-between items-center">
     <a href="{{ url_for('home') }}" class="text-5xl font-extrabold italic font-litera">shelldev</a>
     <div class="flex space-x-5 border-0">
-      <a href={{ links.get('linkedin') }} target="_blank" class="">
+      <a href={{ external_links.get('linkedin') }} target="_blank" class="">
         <i data-lucide="linkedin"></i>
       </a>
 
-      <a href={{ links.get("github") }} target="_blank" class="">
+      <a href={{ external_links.get("github") }} target="_blank" class="">
         <i data-lucide="github"></i>
       </a>
       
-      <a href="mailto:{{links.get('email')}}" target="_blank" class="">
+      <a href="mailto:{{external_links.get('email')}}" target="_blank" class="">
         <i data-lucide="mail"></i>
       </a>
 
-      <a href={{ links.get('resume') }} target="_blank" class="">
+      <a href={{ external_links.get('resume') }} target="_blank" class="">
         <i data-lucide="download"></i>
       </a>
     </div>
@@ -25,70 +25,30 @@
 
   <div class="text-xl font-light flex flex-col space-y-3.5">
     <p><strong>Bòóni!</strong> I'm Adebayo -– a software developer who loves building bridges between ideas and technology. I specialize in turning complex problems into streamlined, user-friendly solutions, crafting code that’s both efficient and adaptable.</p>
-    <p><a href={{ links.get('resume') }} target="_blank" class="underline font-normal">My resume</a> offers a deeper look into my skills, experience, and the value I can add to your team.</p>
+    <p><a href={{ external_links.get('resume') }} target="_blank" class="underline font-normal">My resume</a> offers a deeper look into my skills, experience, and the value I can add to your team.</p>
     <p>Check out some of my work below – each project is a step in my journey toward mastering the art of software development. Let’s build something amazing together! 🚀</p>
   </div>
 
   <section class="flex flex-wrap justify-between gap-y-4">
+    {% for project in projects %}
     <div class="border-2 border-rose-500 rounded basis-[49%] flex flex-col space-y-2 text-lg px-4 py-4 text-zinc-700">
       <div class="flex justify-between items-center">
-        <span class="font-semibold">search-ojcc</span>
+        <span class="font-semibold">{{project.name}}</span>
         <span>
-          <a href="https://search-ojcc.vercel.app/" target="_blank">
+          <a href={{project.href}} target="_blank">
             <i data-lucide="arrow-up-right" class="size-4.5"></i>
           </a>
         </span>
       </div>
       <div>
-      <p class="font-light">🤖&nbsp;Streamlines finding florida case-related information</p>
+        <p class="font-light">{{project.description}}</p>
       </div>
     </div>
-
-    <div class="border-2 border-rose-500 rounded basis-[49%] flex flex-col space-y-2 text-lg px-4 py-4 text-zinc-700">
-      <div class="flex justify-between items-center">
-        <span class="font-semibold">search-ojcc</span>
-        <span>
-          <a href="https://search-ojcc.vercel.app/" target="_blank">
-            <i data-lucide="arrow-up-right" class="size-4.5"></i>
-          </a>
-        </span>
-      </div>
-      <div>
-      <p class="font-light">🤖&nbsp;Streamlines finding florida case-related information</p>
-      </div>
-    </div>
-    
-    <div class="border-2 border-rose-500 rounded basis-[49%] flex flex-col space-y-2 text-lg px-4 py-4 text-zinc-700">
-      <div class="flex justify-between items-center">
-        <span class="font-semibold">search-ojcc</span>
-        <span>
-          <a href="https://search-ojcc.vercel.app/" target="_blank">
-            <i data-lucide="arrow-up-right" class="size-4.5"></i>
-          </a>
-        </span>
-      </div>
-      <div>
-      <p class="font-light">🤖&nbsp;Streamlines finding florida case-related information</p>
-      </div>
-    </div>
-    
-    <div class="border-2 border-rose-500 rounded basis-[49%] flex flex-col space-y-2 text-lg px-4 py-4 text-zinc-700">
-      <div class="flex justify-between items-center">
-        <span class="font-semibold">search-ojcc</span>
-        <span>
-          <a href="https://search-ojcc.vercel.app/" target="_blank">
-            <i data-lucide="arrow-up-right" class="size-4.5"></i>
-          </a>
-        </span>
-      </div>
-      <div>
-      <p class="font-light">🤖&nbsp;Streamlines finding florida case-related information</p>
-      </div>
-    </div>
+    {% endfor %}
   </section>
 
   <div class="text-xl font-light flex flex-col space-y-3.5">
-    <p>I build with JavaScript/Typescript, Python, Rust, Django, Flask, FastAPI, CSS/SASS/LESS, TailwindCSS, Redux, Zustand, MongoDB, Postgresql, Git, Github, Gitlab, Linux.</p>
+    <p>I build with JavaScript/Typescript, Python, React, NextJS, Rust, Django, Flask, FastAPI, CSS/SASS/LESS, TailwindCSS, Redux, Zustand, MongoDB, Postgresql, Git, Github, Gitlab, Linux.</p>
     <p>I believe in continuous learning and a clean, intuitive approach to development. When I'm not coding, you might find me exploring the latest tech trends, contributing to open-source projects, or experimenting with new frameworks.</p>
   </div>
 </section>

@@ -1,12 +1,18 @@
 import json
+from pathlib import Path
 from flask import Flask, render_template
 
 app = Flask(__name__)
+data = json.load(open(str(Path("api", "links.json"))))
 
 
 @app.route("/", methods=["GET"])
 def home():
-    return render_template("index.html", links=json.load(open("./api/links.json")))
+    return render_template(
+        "index.html",
+        external_links=data.get("external_links"),
+        projects=data.get("projects"),
+    )
 
 
 @app.route("/license", methods=["GET"])
